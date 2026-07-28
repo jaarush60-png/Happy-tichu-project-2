@@ -1,0 +1,80 @@
+:root {
+  --coral: #ff7675;
+  --red: #d63031;
+  --bg-pink: #ffeaa7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdd7e4;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.window {
+  position: relative;
+  width: 320px;
+  background-color: #fff0f5;
+  border: 3px solid var(--coral);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.titlebar {
+  background-color: var(--coral);
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  padding: 24px 16px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainTitle {
+  font-size: 1.2rem;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.cat-placeholder {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 8px 24px;
+  border: 2px solid var(--coral);
+  background-color: white;
+  color: var(--red);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-no {
+  position: relative;
+  transition: left 0.15s ease, top 0.15s ease;
+}
